@@ -12,8 +12,8 @@ collections:
     label_singular: Post
     folder: content/posts
     create: true
-    slug: "{{slug}}"
-    preview_path: "/{{slug}}"
+    slug: "{{year}}-{{month}}-{{day}}-{{fields.slug}}"
+    preview_path: "/{{fields.slug}}"
     fields:
       - {label: "Publish Date", name: "date", widget: "datetime"}
       - {label: "Title", name: "title", widget: "string"}
