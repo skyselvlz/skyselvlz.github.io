@@ -2,7 +2,8 @@
 date: {{ .Date }}
 title: "{{ replace .Name "-" " " | title }}"
 slug: {{ .Name }}
-disqus: false
+description: ""
+disqus: true
 draft: true
 ---
 
