@@ -4,9 +4,15 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,300italic,400italic|Raleway:300,400" rel="stylesheet">
   <title>Content Manager</title>
 </head>
 <body>
   <script src="https://unpkg.com/netlify-cms@^2.0.0/dist/netlify-cms.js"></script>
+  <script>
+    CMS.registerPreviewStyle("/css/admin.css");
+    CMS.registerPreviewStyle("/css/main.css");
+    CMS.registerPreviewStyle("/css/custom.css");
+  </script>
 </body>
 </html>
