@@ -12,12 +12,12 @@ collections:
     label_singular: Post
     folder: content/posts
     create: true
-    slug: "{{slug}}"
-    preview_path: "/{{slug}}"
+    slug: "{{year}}-{{month}}-{{day}}-{{fields.url_slug}}"
+    preview_path: "/{{fields.url_slug}}"
     fields:
       - {label: "Publish Date", name: "date", widget: "datetime"}
       - {label: "Title", name: "title", widget: "string"}
-      - {label: "Slug", name: "slug", widget: "string", hint: "URL slug, e.g. a-post will become skyselvlz.com/a-post"}
+      - {label: "Slug", name: "url_slug", widget: "string", hint: "URL slug, e.g. a-post will become skyselvlz.com/a-post"}
       - {label: "Description", name: "description", widget: "string", hint: "Short description to be shown on the home page"}
       - {label: "Tags", name: "tags", widget: "list", required: false, hint: "organization, college, music, ..."}
       - {label: "Enable comments", name: "disqus", widget: "boolean", default: true}

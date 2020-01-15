@@ -5,7 +5,7 @@ description:
     Hello! In this first post I will tell briefly about
     the what, why, and how I create and run this site.
 comments: true
-slug: introduction
+url_slug: introduction
 ---
 ![I really don't know if this is legal or not](https://www.maciejratajski.com/sites/default/files/work/image/ratajski-this-is-an-image-of-a-setence.jpg)
 
