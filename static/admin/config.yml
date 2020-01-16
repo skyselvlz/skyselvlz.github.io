@@ -6,6 +6,7 @@ publish_mode: editorial_workflow
 media_folder: static/img
 public_folder: /img
 site_url: https://skyselvlz.com
+logo_url: https://skyselvlz.com/icons/logo_tr.png
 
 collections:
   - name: posts
