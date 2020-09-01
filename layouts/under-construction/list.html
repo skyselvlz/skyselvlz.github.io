@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+{{ partial "header.html" . }}
+<body>
+	<div class="container wrapper post">
+		<div class="header">
+			<h1 class="site-title"><a href="{{ .Site.BaseURL }}">{{ .Site.Title }}</a></h1>
+			<div class="site-description">
+				{{- if isset .Site.Params "subtitle" -}}
+				<h2>{{ .Site.Params.Subtitle | markdownify }}</h2>
+				{{- end -}}
+				<nav class="nav social">
+					<ul class="flat">
+						{{- range $index, $key := .Site.Params.Social -}}
+						<a href="{{ $key.url }}" title="{{ $key.name }}"><i data-feather="{{ $key.icon }}"></i></a>
+						{{- end -}}
+					</ul>
+				</nav>
+			</div>
+		</div>
+		<div class="post-header">
+			<h1 class="title">
+                {{ with site.GetPage "/under-construction" }}
+                    {{ .Title }}
+                {{ end }}
+            </h1>
+		</div>
+
+		<div class="markdown">
+            {{ with site.GetPage "/under-construction" }}
+                {{ .Content }}
+			{{ end }}
+		</div>
+	</div>
+	{{ partial "footer.html" . }}
+</body>
+</html>
